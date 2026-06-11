@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Seventh Cipher - Home</title>
+
+    <style>
+        /* RESET & BASE*/
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Georgia, 'Times New Roman', serif;
+            background-color: #1a1a2e;
+            color: #e0e0e0;
+            line-height: 1.6;
+        }
+
+        /*  NAVIGATION BAR  */
+        nav {
+            background-color: #16213e;
+            padding: 15px 30px;
+            text-align: center;
+            border-bottom: 2px solid #c9a227;
+        }
+
+        nav a {
+            color: #c9a227;
+            text-decoration: none;
+            margin: 0 20px;
+            font-size: 18px;
+        }
+
+        nav a:hover {
+            text-decoration: underline;
+        }
+
+        /* HERO SECTION */
+        header {
+            text-align: center;
+            padding: 60px 20px;
+            background-color: #0f3460;
+        }
+
+        header h1 {
+            font-size: 48px;
+            color: #c9a227;
+            margin-bottom: 10px;
+        }
+
+        header p {
+            font-size: 20px;
+            font-style: italic;
+            color: #b0b0b0;
+            margin-bottom: 30px;
+        }
+
+        header button {
+            background-color: #c9a227;
+            color: #1a1a2e;
+            border: none;
+            padding: 12px 30px;
+            font-size: 16px;
+            cursor: pointer;
+            font-weight: bold;
+        }
+
+        header button:hover {
+            background-color: #e0b83a;
+        }
+
+        /*GENERAL SECTIONS*/
+        section {
+            padding: 50px 30px;
+            max-width: 1000px;
+            margin: 0 auto;
+        }
+
+        section h2 {
+            color: #c9a227;
+            font-size: 32px;
+            margin-bottom: 20px;
+            text-align: center;
+        }
+
+        section p {
+            font-size: 16px;
+            margin-bottom: 15px;
+        }
+
+        /* ABOUT SECTION */
+        .about-content {
+            display: flex;
+            align-items: center;
+            gap: 30px;
+        }
+
+        .about-content img {
+            width: 300px;
+            height: 200px;
+            object-fit: cover;
+            border: 2px solid #c9a227;
+        }
+
+        /* PILLARS SECTION */
+        .pillars-container {
+            display: flex;
+            justify-content: center;
+            gap: 30px;
+            flex-wrap: wrap;
+            margin-top: 20px;
+        }
+
+        .pillar-card {
+            background-color: #16213e;
+            border: 1px solid #c9a227;
+            padding: 20px;
+            width: 250px;
+            text-align: center;
+        }
+
+        .pillar-card img {
+            width: 100px;
+            height: 100px;
+            object-fit: cover;
+            margin-bottom: 10px;
+        }
+
+        .pillar-card h3 {
+            color: #c9a227;
+            margin-bottom: 10px;
+        }
+
+        /*  WHO WE ACCEPT SECTION */
+        .accept-content {
+            display: flex;
+            align-items: center;
+            gap: 30px;
+        }
+
+        .accept-content img {
+            width: 280px;
+            height: 200px;
+            object-fit: cover;
+            border: 2px solid #c9a227;
+        }
+
+        /*JOIN US SECTION */
+        .join-section {
+            text-align: center;
+            background-color: #0f3460;
+            padding: 50px 30px;
+        }
+
+        .join-section h2 {
+            color: #c9a227;
+        }
+
+        .join-section p {
+            max-width: 600px;
+            margin: 0 auto 20px auto;
+        }
+
+        .join-section button {
+            background-color: #c9a227;
+            color: #1a1a2e;
+            border: none;
+            padding: 12px 30px;
+            font-size: 16px;
+            cursor: pointer;
+            font-weight: bold;
+        }
+
+        .join-section button:hover {
+            background-color: #e0b83a;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- ===== NAVIGATION BAR ===== -->
+    <!-- Page Links -->
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="portal.html">Member Portal</a>
+        <a href="archives.html">Archives</a>
+    </nav>
+
+    <!-- ===== HERO SECTION ===== -->
+    <header>
+        <h1>The Seventh Cipher</h1>
+        <p>"Knowledge is the only cipher worth cracking."</p>
+
+
+        <img src="images/hero-crest.png" alt="The Seventh Cipher society crest" width="400">
+
+        <a href="portal.html">
+            <button>Request Access</button>
+        </a>
+    </header>
+
+    <!-- ===== ABOUT SECTION ===== -->
+    <section>
+        <h2>About The Seventh Cipher</h2>
+        <div class="about-content">
+            <div>
+                <p>
+                    Founded in the shadows of the digital age, The Seventh Cipher is a
+                    clandestine society dedicated to the pursuit of hidden knowledge. Our
+                    members are bound by a shared belief that true power lies not in wealth
+                    or status, but in the ability to decode the world's deepest mysteries.
+                </p>
+                <p>
+                    From ancient ciphers to modern encryption, we study every form of
+                    concealed communication. Our origins trace back to a small circle of
+                    seven cryptographers who vowed to protect and share forbidden knowledge
+                    with those deemed worthy.
+                </p>
+            </div>
+
+
+        </div>
+    </section>
+
+    <!-- ===== OUR PILLARS SECTION ===== -->
+    <section>
+        <h2>Our Pillars</h2>
+        <div class="pillars-container">
+
+            <!-- Pillar Card 1: Cryptography -->
+            <div class="pillar-card">
+
+                <h3>Cryptography</h3>
+                <p>The art of writing and solving codes. We master ciphers old and new to protect secrets that matter.
+                </p>
+            </div>
+
+            <!-- Pillar Card 2: Intelligence -->
+            <div class="pillar-card">
+
+                <h3>Intelligence</h3>
+                <p>Sharp minds see what others miss. We train our members to observe, analyze, and think critically.</p>
+            </div>
+
+            <!-- Pillar Card 3: Brotherhood -->
+            <div class="pillar-card">
+
+                <h3>Brotherhood</h3>
+                <p>Loyalty above all. Our members stand united, sharing knowledge and protecting one another.</p>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- ===== WHO WE ACCEPT SECTION ===== -->
+    <section>
+        <h2>Who We Accept</h2>
+        <div class="accept-content">
+            <div>
+                <h3>Hackers</h3>
+                <p>Digital pioneers who break barriers and expose vulnerabilities to make systems stronger.</p>
+
+                <h3>Scholars</h3>
+                <p>Academic minds devoted to research, history, and the relentless pursuit of understanding.</p>
+
+                <h3>Detectives</h3>
+                <p>Investigators with sharp instincts who piece together clues others overlook.</p>
+
+                <h3>Gifted Students</h3>
+                <p>Young prodigies with exceptional talent and the curiosity to push beyond ordinary limits.</p>
+            </div>
+
+
+        </div>
+    </section>
+
+    <!-- ===== JOIN US SECTION ===== -->
+    <section class="join-section">
+        <h2>Join Us</h2>
+        <p>
+            Do you have what it takes to become one of us? If you possess the mind
+            of a codebreaker and the heart of a seeker, step forward. The Seventh
+            Cipher awaits those brave enough to knock on its door.
+        </p>
+        <a href="portal.html">
+            <button>Apply for Membership</button>
+        </a>
+    </section>
+
+</body>
+
+</html>

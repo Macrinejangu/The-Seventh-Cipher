@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Member Portal - The Seventh Cipher</title>
+</head>
+<body>
+<!--Navigation-->
+<nav>
+    <a href=""index.html">Home</a>
+    <br>
+    <a href="portal.html">Member Portal</a>
+    <br>
+    <a href="archives.html">Archives</a>
+    
+</nav>
+<hr>
+<!--hr draws a horizontal line-->
+<header>
+    <h1>The seventh Cipher; Member Portal</h1>
+    <p><em>Access is earned. Idetify Yourself</em></p>
+<!--em makes the text italic-->
+<main>
+    <!--main tag wramps the promary content of the page-->
+    Complete the form below to apply for membership.
+        Fields marked with <strong>*</strong> are required.
+        <!--strong makes text bold and shows the text is important-->
+    </p>
+    <form action="#" method="post">
+        <!--# means the form will submit to the same page and method means data is sent without showing it in the url-->
+
+        <!--PERSONAL IDENTITY-->
+        <fieldset>
+            <legend>01 - Personal Identitiy</legend>
+            <!--legend is the title of the fieldset group-->
+            <p>
+                <strong for="full-name">Full Name *</strong></label>
+                <br>
+                <input type="text" id="full-name" name="full-name" placeholder="Enter your full name" required>
+                <br>
+                <small>Your Real Name. No aliases allowed.</small>
+                <!--small makes the text smaller-->
+
+            </p>
+            <p>
+                <label for="agent-id"><strong>Agent ID Number</strong></label>
+                <br>
+                <input type="number" id="agent-id" name="agent-id" placeholder="00742" min="1" max="99999">
+                <br>
+                <small>Your assigned numeric identifier</small>
+
+            </p>
+        <p>
+            <label for="contact-time"><strong>Preferred Contact Time</strong></label>
+            <br>
+            <input type="time" id="contact-time" name="contact-time">
+            <br>
+            <small>When should we reach you</small>
+        </p>
+        </fieldset>
+
+        <!--CONTACT INFORMATION-->
+        <fieldset>
+            <legend>O2 - Contact Credentials</legend>
+
+            <p>
+                <label for="email"><strong>Email Address *</strong></label>
+                <br>
+                <input type="email" id="email" name="email" placeholder="enter your email address" required>
+                <br>
+                <small>We will use this to contact you</small>
+            </p>
+            <br>
+
+            <p>
+                <label for="phone"><strong>Phone Number</strong></label>
+                <br>
+                <input type="tel" id="phone" name="phone" placeholder="+2547-123-456-789">
+                <br>
+                <small>Include your country code</small>
+            </p>
+            <br>
+
+            <p> 
+                <label for="portfolio"><strong>Portfolio Link</strong></label>
+                <br>
+                <input type="url" id="portfolio" name="portfolio" placeholder="https://your-portfolio.com">
+                <br>
+                <small>Optional. Link to your portfolio</small>
+            </p>
+
+        </fieldset>
+
+        <!--SECURE ACCESS-->
+        <fieldset>
+            <legend>03 - Secure Access</legend>
+            <p>
+                <label for="username"><strong>Username *</strong></label>
+                <br>
+                <input type="text" id="username" name="username" placeholder="Enter your desired username" required>
+                <br>
+                <small>Choose a unique username for your account</small>
+            </p>
+            <p>
+                <label for="password"><strong>Password *</strong></label>
+                <br>
+                <input type="password" id="password" name="password" placeholder="Enter your password" minlength="8" required>
+                <br>
+                <small>Create a strong password with at least 8 characters</small>
+            </p>
+
+            <p> 
+                <label for="confirm-password"><strong>Confirm Password *</strong></label>
+                <br>
+                <input type="password" id="confirm-password" name="confirm-password" placeholder="Re-enter your password" minlength="8" required>
+                <br>
+                <small>Re-enter your password to confirm</small>
+            </p>
+        </fieldset>
+
+        <!--MEEMBERSHIP CLASSIFICATION-->
+        <fieldset>
+            <legend>04 - Membership Classification</legend>
+            <p>
+               <!--Radio Buttons-->
+               <p><strong>Membership Type</strong></p>
+               <p><small>Select one. </small></p>
+
+               <p> <input type="radio" id="scholar" name="membership-type" value="scholar">
+               <label for="scholar">Scholar</label>
+               
+            </p>
+
+            <p>
+                <input type="radio" id="hacker" name="membership-type" value="hacker">
+                <label for="hacker">Hacker</label>
+            </p>
+
+            <p>
+                <input type="radio" id="detective" name="membership-type" value="detective">
+                <label for="detective">Detective</label>
+            </p>
+
+            <p>
+                <input type="radio" id="gifted" name="membership-type" value="gifted">
+                <label for="gifted">Gifted</label>
+            </p>
+
+            <br>
+
+            <!--CHECKBOXES | AREAS OF INTEREST-->
+            <P><STRONG>Areas of Interest</STRONG></P>
+            <p><small>Select all that apply.</small></p>
+
+            <p>
+                <input type="checkbox" id="cryptography" name="interests" value="cryptography">
+                <label for="cryptography">Cryptography</label>
+            </p>
+
+            <p>
+                <input type="checkbox" id="intel-ops" name="interests" value="intel-ops">
+                <label for="intel-ops">Intelligence Operations</label>
+            </p>
+
+            <p>
+                <input type="checkbox" id="field-work" name="interests" value="field-work">
+                <label for="field-work">Field Work</label>
+            </p>
+
+            <p>
+                <input type="checkbox" id="research" name="interests" value="research">
+                <label for="research">Research</label>
+            </p>
+
+            <br>
+
+            <!--DROPDOWN SELECT-->
+            <p>
+                <label for="country">Country of Origin *</label>
+                <br>
+                <select id="country" name="country" required>
+
+                    <option value="">Select your country</option>
+                    <option value="ke">Kenya</option>
+                    <option value="ug">Uganda</option>
+                    <option value="tz">Tanzania</option>
+                    <option value="sa">South Africa</option>
+                    <option value="ng">Nigeria</option>
+                    <option value="gh">Ghana</option>
+                    <option value="de">Germany</option>
+                    <option value="us">United States</option>
+                    <option value="ca">Canada</option>
+                    <option value="uk">United Kingdom</option>
+                    <option value="Other">Other</option>
+                </select>
+                <br>
+                <small>Your Country of Origin or current residence</small>
+            </p>
+        </fieldset>
+
+        <!--SKILLS AND PROFILE-->
+        <fieldset>
+            <legend>05 - Skills and Profile</legend>
+            <p>
+                <label for="skill-level"><strong>Skill Level (1 to 10)</strong></label>
+                <br>
+                <input type="number" id="skill-level" name="skill-level" min="1" max="10" placeholder="Rate your overall skill level">
+
+                <span id="skill-display">5></span>
+                <br>
+                <small>Drag the slider. 1 = beginner, 10 = elite operative</small>
+            </p>
+
+            <!--COLOR SELECTOR-->
+            <P>
+                <label for="cipher-color">Preferred Cipher Color</label>
+                <br>
+                <input type="color" id="cipher-color" name="cipher-color" value="#006400">
+                <br>
+                <small>Choose a color that represents your cipher style</small>
+            </P>
+
+            <!--FILE UPLOADING-->
+            <P>
+                <label for="profile-pic"><strong>Upload Proof of Identity</strong></label>
+                <br>
+                <input type="file" id="id-upload" name="identity-proof" accept=".pdf,.jpg,.jpeg,.png">
+                <br>
+                <small>Accepted formats: PDF, JPG, PNG. Max size: 5MB</small>
+            </P>
+        </fieldset>
+
+        <!--APPLICATION STATEMENT-->
+          <fieldset>
+        <legend>06 - Application Statement</legend>
+ 
+        <!-- TEXTAREA -->
+        <p>
+          <label for="why-join"><strong>Why do you want to join The Seventh Cipher? *</strong></label>
+          <br>
+          <textarea
+            id="why-join"
+            name="why_join"
+            rows="6"
+            cols="60"
+            placeholder="Write your statement here. Be honest - we will know if you are not."
+            required
+          ></textarea>
+           <br>
+          <small>This statement will be reviewed by the Grand Archivist.</small>
+        </p>
+
+        <!--AGREEMENT CHECKBOX-->
+        <P>
+            <input type="checkbox" id="code-of-silence" name="agrees-to-code" value="agreed" required>
+            <label for="code-of-silence">
+                <strong>I agree to uphold the Code of Silence and all rules of The Seventh Cipher.</strong></label>
+        </P>
+
+
+            
+    </form>
+</main>
+
+</header>
+</body>
+
+</html>
